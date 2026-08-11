@@ -16,7 +16,7 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-BASE_URL = "https://faphouse2.com"
+BASE_URL = ""
 EMAIL = os.environ.get('EMAIL', 'rockstarga69@gmail.com')
 PASSWORD = os.environ.get('PASSWORD', 'Jaiisbeast@1')
 CACHE_DURATION = 300
@@ -273,7 +273,7 @@ MAIN_PAGE_HTML = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Faphouse</title>
+    <title>akbot</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
@@ -540,9 +540,9 @@ MAIN_PAGE_HTML = """
 <div class="app" id="app">
     <div class="splash-overlay" id="splashOverlay">
         <div class="splash-content">
-            <div class="splash-18">18+<span>adult content</span></div>
+            <div class="splash-18">ak<span>adult content</span></div>
             <button class="splash-btn" id="enterBtn">enter</button>
-            <div class="splash-sub">you must be 18 or older to continue</div>
+            <div class="splash-sub">you must be ak or older to continue</div>
         </div>
     </div>
     <div class="page-paste" id="pagePaste">
@@ -550,22 +550,22 @@ MAIN_PAGE_HTML = """
         <div class="bg-grid"></div>
         <div class="brand-container">
             <div class="brand-pulse">
-                <span class="fap">FAP</span>
-                <span class="house">HOUSE</span>
-                <span class="badge-18">18+</span>
+                <span class="ak">FAP</span>
+                <span class="bot">HOUSE</span>
+                <span class="badge-18">ak</span>
             </div>
             <div class="brand-tagline">player · zero latency</div>
         </div>
         <div class="input-area">
             <form method="GET" action="/play" style="width:100%;" id="urlForm">
                 <div class="input-wrapper">
-                    <input type="text" name="url" id="videoUrlInput" placeholder="https://faphouse2.com/videos/..." spellcheck="false" value="{{ video_url or '' }}">
+                    <input type="text" name="url" id="videoUrlInput" placeholder="" spellcheck="false" value="{{ video_url or '' }}">
                     <button type="submit" class="btn-load">load</button>
                 </div>
             </form>
             <div class="input-example">
                 <span>try </span>
-                <span class="example-link" id="exampleLink">https://faphouse2.com/videos/shared-bed-stepsister-fuck-C6Qi1u</span>
+                <span class="example-link" id="exampleLink"></span>
             </div>
         </div>
         <div class="paste-footer">premium · yellow black · faphouse</div>
@@ -597,7 +597,7 @@ PLAYER_PAGE_HTML = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Faphouse Player</title>
+    <title>ak Player</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
@@ -920,9 +920,9 @@ PLAYER_PAGE_HTML = """
         </video>
         <div class="header" id="header">
             <div class="header-brand">
-                <span class="fap">FAP</span>
-                <span class="house">HOUSE</span>
-                <span class="header-badge">18+</span>
+                <span class="ak">ak</span>
+                <span class="bot">HOUSE</span>
+                <span class="header-badge">ak</span>
             </div>
             <div style="display:flex; align-items:center; gap:0.6rem;">
                 <span class="header-status"><span class="dot"></span> live</span>
@@ -1232,7 +1232,7 @@ def handler(request, context):
 if __name__ == "__main__":
     print(f"""
 {'='*70}
-Faphouse Player API (Vercel Ready)
+Ak Player API (Vercel Ready)
 {'='*70}
 
 Features:
@@ -1240,7 +1240,7 @@ Features:
   • Finds M3U8 URLs reliably
   • LRU caching for fast responses
   • Works on Vercel serverless
-  • Premium 18+ webplayer UI
+  • Premium ak webplayer UI
 
 Endpoints:
   /play?url=VIDEO_URL     - Watch video with premium UI
