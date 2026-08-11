@@ -550,8 +550,8 @@ MAIN_PAGE_HTML = """
         <div class="bg-grid"></div>
         <div class="brand-container">
             <div class="brand-pulse">
-                <span class="ak">FAP</span>
-                <span class="bot">HOUSE</span>
+                <span class="ak">ak</span>
+                <span class="bot">bot</span>
                 <span class="badge-18">ak</span>
             </div>
             <div class="brand-tagline">player · zero latency</div>
@@ -568,7 +568,7 @@ MAIN_PAGE_HTML = """
                 <span class="example-link" id="exampleLink"></span>
             </div>
         </div>
-        <div class="paste-footer">premium · yellow black · faphouse</div>
+        <div class="paste-footer">premium · yellow black · ak</div>
     </div>
 </div>
 <script>
@@ -660,7 +660,7 @@ PLAYER_PAGE_HTML = """
         }
         .header.visible { opacity: 1; pointer-events: auto; }
         .header-brand { display: flex; align-items: baseline; gap: 0.2rem; }
-        .header-brand .fap {
+        .header-brand .ak {
             font-family: "Unbounded", sans-serif;
             font-size: 0.9rem;
             font-weight: 900;
@@ -921,7 +921,7 @@ PLAYER_PAGE_HTML = """
         <div class="header" id="header">
             <div class="header-brand">
                 <span class="ak">ak</span>
-                <span class="bot">HOUSE</span>
+                <span class="bot">bot</span>
                 <span class="header-badge">ak</span>
             </div>
             <div style="display:flex; align-items:center; gap:0.6rem;">
