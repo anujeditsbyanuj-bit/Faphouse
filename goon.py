@@ -420,7 +420,7 @@ MAIN_PAGE_HTML = """
             50% { filter: blur(0px); text-shadow: 0 0 40px rgba(245,197,24,0.03); transform: scale(1); }
             80% { filter: blur(5px); text-shadow: 0 0 60px rgba(245,197,24,0.08); transform: scale(1.015); }
         }
-        .brand-pulse .house {
+        .brand-pulse .bot {
             color: #f5f0e6;
             -webkit-text-fill-color: #f5f0e6;
             position: relative;
@@ -540,7 +540,7 @@ MAIN_PAGE_HTML = """
 <div class="app" id="app">
     <div class="splash-overlay" id="splashOverlay">
         <div class="splash-content">
-            <div class="splash-18">ak<span>adult content</span></div>
+            <div class="splash-18">ak<span>ak content</span></div>
             <button class="splash-btn" id="enterBtn">enter</button>
             <div class="splash-sub">you must be ak or older to continue</div>
         </div>
@@ -877,7 +877,7 @@ PLAYER_PAGE_HTML = """
         @media (max-width: 700px) {
             .video-wrapper { width: 96%; border-radius: 8px; }
             .header { padding: 0.6rem 1rem; }
-            .header-brand .ak, .header-brand .house { font-size: 0.75rem; }
+            .header-brand .ak, .header-brand .bot { font-size: 0.75rem; }
             .header-badge { font-size: 0.35rem; padding: 0.02rem 0.3rem; }
             .controls-wrapper { padding: 0 0.8rem 0.8rem 0.8rem; }
             .controls-row button { font-size: 0.45rem; min-height: 24px; padding: 0.15rem 0.3rem; }
