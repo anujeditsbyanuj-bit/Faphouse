@@ -21,7 +21,7 @@ EMAIL = os.environ.get('EMAIL', 'rockstarga69@gmail.com')
 PASSWORD = os.environ.get('PASSWORD', 'Jaiisbeast@1')
 CACHE_DURATION = 300
 
-class FaphouseClient:
+class AkClient:
     def __init__(self):
         self.session = None
         self.logged_in = False
@@ -265,7 +265,7 @@ class FaphouseClient:
         
         return None
 
-client = FaphouseClient()
+client = AkClient()
 
 MAIN_PAGE_HTML = """
 <!DOCTYPE html>
@@ -405,7 +405,7 @@ MAIN_PAGE_HTML = """
             letter-spacing: -0.02em;
             position: relative;
         }
-        .brand-pulse .fap {
+        .brand-pulse .Ak {
             background: linear-gradient(135deg, #f5c518, #d4a800);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -669,7 +669,7 @@ PLAYER_PAGE_HTML = """
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        .header-brand .house {
+        .header-brand .bot {
             font-family: "Unbounded", sans-serif;
             font-size: 0.9rem;
             font-weight: 900;
@@ -877,7 +877,7 @@ PLAYER_PAGE_HTML = """
         @media (max-width: 700px) {
             .video-wrapper { width: 96%; border-radius: 8px; }
             .header { padding: 0.6rem 1rem; }
-            .header-brand .fap, .header-brand .house { font-size: 0.75rem; }
+            .header-brand .ak, .header-brand .house { font-size: 0.75rem; }
             .header-badge { font-size: 0.35rem; padding: 0.02rem 0.3rem; }
             .controls-wrapper { padding: 0 0.8rem 0.8rem 0.8rem; }
             .controls-row button { font-size: 0.45rem; min-height: 24px; padding: 0.15rem 0.3rem; }
@@ -899,7 +899,7 @@ PLAYER_PAGE_HTML = """
         @media (orientation: landscape) and (max-height: 500px) {
             .video-wrapper { width: 85%; max-height: 85vh; }
             .header { padding: 0.4rem 1rem; }
-            .header-brand .fap, .header-brand .house { font-size: 0.7rem; }
+            .header-brand .ak, .header-brand .house { font-size: 0.7rem; }
             .controls-wrapper { padding: 0 1rem 0.6rem 1rem; }
             .controls-row button { font-size: 0.4rem; min-height: 20px; padding: 0.1rem 0.25rem; }
             .controls-row .play-btn { font-size: 0.45rem; padding: 0.1rem 0.6rem; min-width: 36px; }
